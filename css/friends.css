@@ -1,0 +1,243 @@
+*  {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+body {
+    overflow: hidden;
+    background-image: url(../img/image2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(../img/Purple\ Gradient\ Animated--cursor--SweezyCursors\ 1.png), auto;
+}
+a:hover, input[type=submit]:hover {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+}
+header {
+    display: flex;
+}
+header > img:first-child {
+    width: 36px;
+    height: 63px;
+    margin-left: 310px;
+    margin-top: 62px;
+}
+header > p {
+    font-family: 'Permanent Marker', serif;
+    font-size: 2.5rem;
+    margin-top: 72px;
+    margin-left: 27px;
+}
+header > a  {
+    margin-left: 1048px;
+    margin-top: 62px;
+}
+main > .friend_container {
+    display: flex;
+    width: 1300px;
+    height: 800px;
+    margin-left: 310px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+main > .friend_container > .left_chart_container {
+    width: 400px;
+    height: 800px;
+}
+main > .friend_container > .left_chart_container > .menu_container {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+    border-bottom: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .friend_container > .left_chart_container > .menu_container > a:first-child {
+    margin-left: 30px;
+}
+main > .friend_container > .left_chart_container > .menu_container > a:last-child {
+    margin-left: 15px;
+}
+main > .friend_container > .left_chart_container > .menu_container > a {
+    margin-top: 16px;
+    font-family: 'Poiret One', serif;
+    font-size: 1.2rem;
+}
+main > .friend_container > .left_chart_container > .menu_container > a:last-child > img {
+    margin-left: 12px;
+}
+main > .friend_container> .left_chart_container > .menu_container > a > p {
+    margin-top: -5px;
+}
+main > .friend_container > .left_chart_container > .menu_list {
+    width: 400px;
+    height: 700px;
+    padding-top: 107px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .friend_container > .left_chart_container > .menu_list > nav {
+    display: flex;
+}
+main > .friend_container > .left_chart_container > .menu_list > nav:nth-child(n+2) {
+    margin-top: 28px;
+}
+main > .friend_container > .left_chart_container > .menu_list > nav > img {
+    margin-left: 33px;
+}
+main > .friend_container > .left_chart_container > .menu_list > nav > p {
+    margin-left: 14px;
+    font-family: 'Poiret One', serif;
+    font-size: 2rem;
+    color: #fff;
+}
+main > .friend_container > .left_chart_container > .menu_list > nav:first-child > p {
+    color: #D19049;
+}
+main > .friend_container > .left_chart_container > .menu_list > nav:hover {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+main > .friend_container > .result_container {
+    width: 900px;
+    height: 800px;
+}
+main > .friend_container > .result_container > .friends {
+    display: flex;
+    width: 900px;
+    height: 157px;
+    margin-top: 10px;
+}
+main > .friend_container > .result_container > .friends > a:first-child {
+    margin-left: 30px;
+    margin-top: 6px;
+}
+main > .friend_container > .result_container > .friends > nav {
+margin-top: 6px;
+margin-left: 14px;
+font-family: 'Poiret One', serif;
+color: #D19049;
+}
+main > .friend_container > .result_container > .friends > nav > p:first-child {
+    font-size: 3rem;
+}
+main > .friend_container > .result_container > .friends > nav > p:last-child {
+    font-size: 1.5rem;
+}
+main > .friend_container > .result_container > .friends > a:last-child {
+    position: relative;
+    left: 290px;
+    top: 97px;
+    height: 50px;
+}
+main > .friend_container > .result_container > .friends:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+main > .friend_container > .result_container > .sent {
+    display: none;
+    width: 900px;
+    height: 157px;
+    margin-top: 10px;
+}
+main > .friend_container > .result_container > .sent > a:first-child {
+    margin-left: 30px;
+    margin-top: 6px;
+}
+main > .friend_container > .result_container > .sent > nav {
+margin-top: 6px;
+margin-left: 14px;
+font-family: 'Poiret One', serif;
+color: #D19049;
+}
+main > .friend_container > .result_container > .sent > nav > p:first-child {
+    font-size: 3rem;
+}
+main > .friend_container > .result_container > .sent > nav > p:last-child {
+    font-size: 1.5rem;
+}
+main > .friend_container > .result_container > .sent > a:last-child {
+    position: relative;
+    left: 290px;
+    top: 97px;
+    height: 50px;
+}
+main > .friend_container > .result_container > .sent:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+main > .friend_container > .result_container > .friendship {
+    display: none;
+    width: 900px;
+    height: 157px;
+    margin-top: 10px;
+}
+main > .friend_container > .result_container > .friendship > a:first-child {
+    margin-left: 30px;
+    margin-top: 6px;
+}
+main > .friend_container > .result_container > .friendship > nav {
+margin-top: 6px;
+margin-left: 14px;
+font-family: 'Poiret One', serif;
+color: #D19049;
+}
+main > .friend_container > .result_container > .friendship > nav > p:first-child {
+    font-size: 3rem;
+}
+main > .friend_container > .result_container > .friendship > nav > p:last-child {
+    font-size: 1.5rem;
+}
+main > .friend_container > .result_container > .friendship > a:nth-child(3) {
+    position: relative;
+    left: 211px;
+    top: 97px;
+    height: 50px;
+}
+main > .friend_container > .result_container > .friendship > a:last-child {
+    position: relative;
+    left: 241px;
+    top: 97px;
+    height: 50px;
+}
+main > .friend_container > .result_container > .friendship:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+main > .friend_container > .result_container > .find {
+    display: none;
+    justify-content: center;
+}
+main > .friend_container > .result_container > .find > form > input:first-child {
+    width: 650px;
+    height: 60px;
+    margin-top: 41px;
+    border: 3px solid #D19049;
+    border-radius: 40px;
+    background: none;
+    padding-left: 20px;
+    font-family: 'Poiret One', serif;
+    color: #D19049;
+    font-size: 1.5rem;
+}
+main > .friend_container > .result_container > .find > form > input:last-child {
+    position: relative;
+    right: 64px;
+    top: -5px;
+    background: none;
+    background-image: url('../img/friends 4.svg');
+    border: none;
+    width: 33px;
+    height: 33px;
+}
+main > .friend_container > .result_container > .find > form > input[type=text]:focus {
+    border: 4px solid #D19049;
+    outline:none;
+}
