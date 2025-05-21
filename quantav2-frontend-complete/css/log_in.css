@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+body {
+    overflow: hidden;
+    background-image: url(../img/image1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(../img/Purple\ Gradient\ Animated--cursor--SweezyCursors\ 1.png), auto;
+}
+a:hover, input[type=submit]:hover {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+header > img {
+    margin-top: 100px;
+    margin-right: 20px;
+}
+header > p {
+    font-family: 'Permanent Marker', serif;
+    font-size: 4rem;
+    margin-top: 133px;
+    animation: logo-text 2s;
+    animation-fill-mode: both;
+}
+header > p:nth-child(2) {
+    animation-delay: .2s;
+}
+header > p:nth-child(3) {
+    animation-delay: .3s;
+}
+header > p:nth-child(4) {
+    animation-delay: .4s;
+}
+header > p:nth-child(5) {
+    animation-delay: .5s;
+}
+header > p:nth-child(6) {
+    animation-delay: .6s;
+}
+header > p:nth-child(7) {
+    animation-delay: .7s;
+}
+.log_in_container {
+    width: 570px;
+    height: 643px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.25),  rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(5px);
+    border: 3px solid #1E2575;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
+.log_in_container > p:first-child {
+    font-family: 'Permanent Marker', serif;
+    font-size: 2.2rem;
+    padding-left: 160px;
+    padding-top: 100px;
+    color: #fff;
+}
+.log_in_container > form > input::placeholder {
+    font-family: 'Permanent Marker', serif;
+    font-size: 1rem;
+    color:black;
+}
+.log_in_container > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.log_in_container > form > input {
+    margin: auto;
+}
+.log_in_container > form > input:nth-child(2), .log_in_container > form > input:first-child {
+    width: 420px;
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid #1E2575;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+
+}
+.log_in_container > form > input:last-child {
+    font-family: 'Permanent Marker', serif;
+    color: #fff;
+    font-size: 2rem;
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #1E2575;
+}
+.log_in_container > form > input[type=text], .log_in_container > form > input[type=password] {
+    font-family: 'Permanent Marker', serif;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+.log_in_container > form > .view_password, .log_in_container > form > .no_view_password {
+    position: relative;
+    left: 460px;
+    top: -75px;
+    width: 30px;
+    height: 30px;
+    z-index:1;
+}
+.log_in_container > form > .view_password {
+    background-image: url(../img/view.svg);
+}
+.log_in_container > form > .no_view_password {
+    background-image: url(../img/noview.svg);
+}
+.log_in_container > p:nth-last-child(1), .log_in_container > p:nth-last-child(2) {
+    font-family: 'Permanent Marker', serif;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 75px;
+}
+.log_in_container > p:nth-last-child(2) {
+    margin-top: 50px;
+}
+.log_in_container > p:nth-last-child(1) > a{
+    text-decoration: underline;
+}
+
+@keyframes logo-text {
+    0% {
+        transform: translateY(-300px);
+    }
+    10% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: rotate(120deg);
+    }
+    60% {
+        transform: rotate(240deg);
+    }
+    70% {
+        transform: rotate(3600deg);
+    }
+    80% {
+        transform: scale(1.3);
+    }
+    90% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
