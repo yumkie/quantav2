@@ -61,16 +61,19 @@
                         <input name="userfile" type="file" id='real_input'/>
                         <input type="submit" name='upload_file' value="Send a file" />
                     </form>
+                    <form action="" method="POST">
+                        <input type='submit'name='delete_avatar' value=''>
+                    </form>
                 </nav>
                     <?php
                     if(isset($_POST['upload_file'])) {
                         $_SESSION['avatar'] = $_FILES['userfile']['name'];
-                        $uploaddir = '../photo_user/';
+                        $uploaddir = '../avatar_user/';
                         $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
                         move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
                         echo "
                         <script>
-                        window.location = '../php/load_photo.php';
+                        window.location = '../php/load_avatar.php';
                         </script>";
                     }
                     ?>
@@ -81,7 +84,7 @@
                         if($user_avatar['Avatar_photo'] === null) {
                             $avatar = '../img/ava.svg';
                         } else {
-                            $avatar = '../photo_user/' . $user_avatar['Avatar_photo'];
+                            $avatar = '../avatar_user/' . $user_avatar['Avatar_photo'];
                         }
                         ?>
                 <nav class='profile_info_container'>
@@ -95,15 +98,36 @@
                 <nav class="gallary">
                     <img src="../img/arrow slide.svg">
                     <nav class="img">
-                        <img src="../img/gallary 1.jpg">
-                        <img src="../img/gallary 2.jpg">
-                        <img src="../img/gallary 3.jpg">
-                        <img src="../img/gallary 4.jpg">
-                        <img src="../img/image1.png">
-                        <img src="../img/image2.png">
+                        <?php
+                            $select_photo = "SELECT * FROM User_Photos WHERE User_id='$id'";
+                            $result_photo = mysqli_query($link, $select_photo);
+                            while($user_photo = mysqli_fetch_assoc($result_photo)) { 
+                                $photo = '../photo_user/' . $user_photo['Photo'];
+                                ?>
+                                <img src="<?php echo $photo; ?>">
+                        <?php } ?>
                     </nav>
                     <img src="../img/arrow slide.svg">
                 </nav>
+                <nav class='photo'>
+                    <form enctype="multipart/form-data" action="" method="POST">
+                        <label for='input'>Upload a photo</label>
+                        <input name="photoname" type="file" id='input'/>
+                        <input type="submit" name='add_photo' value="Add a photo" />
+                    </form>
+                </nav>
+                    <?php
+                    if(isset($_POST['add_photo'])) {
+                        $_SESSION['photo'] = $_FILES['photoname']['name'];
+                        $uploaddir = '../photo_user/';
+                        $uploadfile = $uploaddir . basename($_FILES['photoname']['name']);
+                        move_uploaded_file($_FILES['photoname']['tmp_name'], $uploadfile);
+                        echo "
+                        <script> 
+                        window.location = '../php/load_photo.php';
+                        </script>";
+                    }
+                    ?>
             </nav>
         </div>
         <div class="edit_profile">

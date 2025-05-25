@@ -135,6 +135,9 @@ main > .profile_container > .profile > .upload_file > form > input[type=submit],
     font-size: 1rem;
     margin-left: 37px;
 }
+main > .profile_container > .profile > .upload_file > form > input[type=submit] {
+    display: none;
+}
  main > .profile_container > .profile > .upload_file > form > label {
     margin-top: 65px;
     margin-bottom: 15px;
@@ -169,6 +172,40 @@ main > .profile_container > .profile >  nav:nth-child(2) > .profile_info > p:nth
 main > .profile_container > .profile > .profile_info_container > img {
     border-radius: 100%;
 }
+main > .profile_container > .profile > .photo > form {
+    display: flex;
+}
+main > .profile_container > .profile > .photo > form > label {
+    width: 300px;
+    height: 47px;
+    background: #D19049;
+    border: none;
+    border-radius: 40px;
+    margin-left: 114px;
+    margin-top: 30px;
+    font-family:  'Permanent Marker', serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .profile_container > .profile > .photo > form > input[type=file] {
+    display: none;
+}
+main > .profile_container > .profile > .photo > form > input:last-child {
+    width: 254px;
+    height: 47px;
+    background: #D19049;
+    border: none;
+    border-radius: 40px;
+    margin-left: 56px;
+    margin-top: 30px;
+    font-family:  'Permanent Marker', serif;
+    font-size: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
 main > .profile_container > .profile > .gallary {
     display: flex;
     margin-top: 100px;
@@ -180,14 +217,14 @@ main > .profile_container > .profile > .gallary > img:last-child {
 main > .profile_container > .profile > .gallary > .img {
     overflow: hidden;
     display: flex;
-    width: 615px;
+    width: 690px;
     height: 300px;
     border-radius: 30px;
 }
 main > .profile_container > .profile > .gallary > .img > img {
-    width: 200px;
+    min-width: 230px;
     height: 300px;
-    margin-right: 5px;
+    margin-right: 2px;
 }
 main > .edit_profile {
     display: none;

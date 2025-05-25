@@ -4,7 +4,7 @@ $('.gallary > img:last-child').click(function () {
     let count = document.querySelectorAll('.img > img').length;
     if (count != count2) {
         count2 += 1;
-        slide -= 205;
+        slide -= 232;
     }
     $('.img > img').css('transform', "translateX("+slide+"px)");
     $('.img > img').css('transition', '.5s');
@@ -13,7 +13,7 @@ $('.gallary > img:first-child').click(function () {
     let count = document.querySelectorAll('.img > img').length;
     if (count2 > 3) {
         count2 -= 1;
-        slide += 205;
+        slide += 232;
     }
     $('.img > img').css('transform', "translateX("+slide+"px)");
     $('.img > img').css('transition', '.5s');
@@ -27,6 +27,14 @@ $('.btn').click(function () {
 $('main > .profile_container > .profile > .profile_info_container > img').click(function () {
     $('main > .profile_container > .profile > nav:first-child').css('display', 'block');
 });
-$('main > .profile_container > .profile > nav:first-child').click(function () {
-    $('main > .profile_container > .profile > nav:first-child').css('display', 'none');
+$('nav:first-child').click(function (e) {
+    if(e.target == this) { 
+            $('main > .profile_container > .profile > nav:first-child').css('display', 'none');
+    } 
+});
+$('main > .profile_container > .profile > .photo > form > label').click(function () {
+    $('main > .profile_container > .profile > .photo > form > input:last-child').css('display', 'flex');
+});
+$('main > .profile_container > .profile > .upload_file > form > label').click(function () {
+    $('main > .profile_container > .profile > .upload_file > form > input[type=submit]').css('display', 'flex');
 });

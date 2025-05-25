@@ -2,9 +2,9 @@
     require('connect.php');
     session_start();
         $id = $_SESSION['id'];
-        $avatar_photo = $_SESSION['avatar'];
-        $insert_avatar = "UPDATE `Users` SET `Avatar_photo`='$avatar_photo' WHERE UserID='$id'";
-        $result_avatar = mysqli_query($link, $insert_avatar);
+        $photo = $_SESSION['photo'];
+        $insert_photo = "INSERT INTO `User_Photos`(`User_id`, `Photo`) VALUES ('$id','$photo')";
+        $result_photo = mysqli_query($link, $insert_photo);
         echo "
         <script>
         window.location = '../html/profile.php';
