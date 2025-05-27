@@ -1,0 +1,294 @@
+*  {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+body {
+    overflow: hidden;
+    background-image: url(../img/image2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(../img/Purple\ Gradient\ Animated--cursor--SweezyCursors\ 1.png), auto;
+}
+a:hover, main > .profile_container > .left_chart_container > .info > img:first-child:hover, .gallary > :is(img:first-child, img:last-child), input[type=submit]:hover, .btn, label {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+}
+header {
+    display: flex;
+}
+header > img:first-child {
+    width: 36px;
+    height: 63px;
+    margin-left: 310px;
+    margin-top: 62px;
+}
+header > p {
+    font-family: 'Permanent Marker', serif;
+    font-size: 2.5rem;
+    margin-top: 72px;
+    margin-left: 27px;
+}
+header > a  {
+    margin-left: 1048px;
+    margin-top: 62px;
+}
+main > .profile_container {
+    display: flex;
+    width: 1300px;
+    height: 800px;
+    margin-left: 310px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+main > .profile_container > .left_chart_container {
+    width: 400px;
+    height: 800px;
+}
+main > .profile_container > .left_chart_container > .menu_container {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+    border-bottom: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .profile_container > .left_chart_container > .menu_container > a:first-child {
+    margin-left: 30px;
+}
+main > .profile_container > .left_chart_container > .menu_container > a:last-child {
+    margin-left: 15px;
+}
+main > .profile_container > .left_chart_container > .menu_container > a {
+    margin-top: 16px;
+    font-family: 'Poiret One', serif;
+    font-size: 1.2rem;
+}
+main > .profile_container > .left_chart_container > .menu_container > a:last-child > img {
+    margin-left: 12px;
+}
+main > .profile_container> .left_chart_container > .menu_container > a > p {
+    margin-top: -5px;
+}
+main > .profile_container > .left_chart_container > .info {
+    width: 400px;
+    height: 700px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .profile_container > .left_chart_container > .info > img:first-child {
+    margin-left: 342px;
+    margin-top: 10px;
+}
+main > .profile_container > .left_chart_container > .info > nav {
+    display: flex;
+    font-family: 'Poiret One', serif;
+    font-size: 1.8rem;
+    color: #D19049;
+    margin-left: 23px;
+}
+main > .profile_container > .left_chart_container > .info > nav > img {
+    margin-left: 10px;
+}
+main > .profile_container > .left_chart_container > .info > p {
+    font-family: 'Poiret One', serif;
+    font-size: 1.5rem;
+    margin-left: 23px;
+    color: #D19049;
+    margin-top: 20px;
+}
+main > .profile_container > .left_chart_container > .info > a > img:last-child {
+    position: relative;
+    top: 266px;
+    left: 23px;
+}
+main > .profile_container > .profile {
+    width: 900px;
+    height: 800px;
+
+}
+main > .profile_container > .profile > .upload_file {
+    display:none;
+    position: absolute;
+    width: 220px;
+    height: 213px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    top: 50px;
+    left: 450px; 
+}
+main > .profile_container > .profile > .upload_file > form > input[type=submit], main > .profile_container > .profile > .upload_file > form > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 146px;
+    height: 33px;
+    border-radius: 40px;
+    background: black;
+    border: none;
+    color:white;
+    font-family:  'Permanent Marker', serif;
+    font-size: 1rem;
+    margin-left: 37px;
+}
+main > .profile_container > .profile > .upload_file > form > input[type=submit] {
+    display: none;
+}
+ main > .profile_container > .profile > .upload_file > form > label {
+    margin-top: 65px;
+    margin-bottom: 15px;
+ }
+main > .profile_container > .profile > .upload_file > form > input[type=file] {
+    display: none;
+}
+main > .profile_container > .profile > .profile_info_container {
+    display: flex;
+}
+main > .profile_container > .profile > .profile_info_container {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+main > .profile_container > .profile >  nav:nth-child(2) > .profile_info > :is(h1, p) {
+    font-family: 'Poiret One', serif;
+    color: #D19049;
+    margin-left: 30px;
+}
+main > .profile_container > .profile > nav:nth-child(2) > .profile_info > h1 {
+    font-size: 4rem;
+}
+main > .profile_container > .profile >  nav:nth-child(2) > .profile_info > p:nth-child(2) {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+main > .profile_container > .profile >  nav:nth-child(2) > .profile_info > p:nth-child(3) {
+    width: 450px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+main > .profile_container > .profile > .profile_info_container > img {
+    border-radius: 100%;
+}
+main > .profile_container > .profile > .photo > form {
+    display: flex;
+}
+main > .profile_container > .profile > .photo > form > label {
+    width: 300px;
+    height: 47px;
+    background: #D19049;
+    border: none;
+    border-radius: 40px;
+    margin-left: 114px;
+    margin-top: 30px;
+    font-family:  'Permanent Marker', serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .profile_container > .profile > .photo > form > input[type=file] {
+    display: none;
+}
+main > .profile_container > .profile > .photo > form > input:last-child {
+    width: 254px;
+    height: 47px;
+    background: #D19049;
+    border: none;
+    border-radius: 40px;
+    margin-left: 56px;
+    margin-top: 30px;
+    font-family:  'Permanent Marker', serif;
+    font-size: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+main > .profile_container > .profile > .gallary {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+main > .profile_container > .profile > .gallary > img:last-child {
+    transform: rotate(180deg);
+}
+main > .profile_container > .profile > .gallary > .img {
+    overflow: hidden;
+    display: flex;
+    width: 690px;
+    height: 300px;
+    border-radius: 30px;
+}
+main > .profile_container > .profile > .gallary > .img > img {
+    min-width: 230px;
+    height: 300px;
+    margin-right: 2px;
+}
+main > .edit_profile {
+    display: none;
+    position: relative;
+    bottom: 930px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+}
+main > .edit_profile > .btn {
+    position: relative;
+    width: 130px;
+    height: 34px;
+    background: #D19049;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+    left: 1046px;
+    top: 193px;
+}
+main > .edit_profile > .btn > p {
+    font-family: 'Permanent Marker', serif;
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+main > .edit_profile > form {
+    width: 418px;
+    position: relative;
+    top: 245px;
+    left: 764px;
+    display: flex;
+    flex-direction: column;
+}
+main > .edit_profile > form > input:nth-child(-n+5) {
+    width: 392px;
+    border: 3px solid #D19049;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-family: 'Poiret One', serif;
+    padding-left: 20px;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: bold;
+}
+main > .edit_profile > form > input:nth-child(-n+5)::placeholder {
+    color: black;
+    font-weight: bold;
+}
+main > .edit_profile > form > :is(:nth-child(n+3):nth-child(-n+5), input:first-child) {
+    height: 50px;
+}
+main > .edit_profile > form > input:nth-child(2) {
+    height: 100px;
+}
+main > .edit_profile > form > input:last-child {
+    width: 225px;
+    height: 50px;
+    border: 3px solid #fff;
+    background: #D19049;
+    border-radius: 30px;
+    font-family: 'Permanent Marker', serif;
+    font-size: 2rem;
+}
+main > .edit_profile > form > input:nth-child(-n+5):focus {
+    border: 5px solid #D19049;
+    outline: none;
+}
