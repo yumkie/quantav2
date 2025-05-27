@@ -87,7 +87,7 @@ main > .profile_container > .left_chart_container > .info > img:first-child {
 main > .profile_container > .left_chart_container > .info > nav {
     display: flex;
     font-family: 'Poiret One', serif;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #D19049;
     margin-left: 23px;
 }

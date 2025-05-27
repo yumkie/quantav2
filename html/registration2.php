@@ -35,6 +35,7 @@
                 $select = "SELECT UserID FROM Users WHERE Email='$id'";
                 $user = mysqli_fetch_assoc(mysqli_query($link, $select));
                 $_SESSION['id'] = $user['UserID'];
+                $_SESSION['auth'] = "Online";
                 if(isset($_POST['sub'])) {
                     $username = $_POST['username'];
                     $lastname = $_POST['lastname'];

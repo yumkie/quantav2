@@ -118,9 +118,12 @@ main > .friend_container > .result_container > .friends {
     height: 157px;
     margin-top: 10px;
 }
-main > .friend_container > .result_container > .friends > a:first-child {
+main > .friend_container > .result_container > .friends > form:first-child {
     margin-left: 30px;
     margin-top: 6px;
+}
+main > .friend_container > .result_container > .friends > form:first-child > img{
+    border-radius: 100%;
 }
 main > .friend_container > .result_container > .friends > nav {
 margin-top: 6px;
@@ -135,14 +138,14 @@ main > .friend_container > .result_container > .friends > nav > p:first-child {
 main > .friend_container > .result_container > .friends > nav > p:last-child {
     font-size: 1.5rem;
 }
-main > .friend_container > .result_container > .friends > form {
+main > .friend_container > .result_container > .friends > form:last-child {
     position: relative;
     right: 10px;
     top: 97px;
     height: 55px;
     width: 50px;
 }
-main > .friend_container > .result_container > .friends > form > input {
+main > .friend_container > .result_container > .friends > form:last-child > input {
     height: 55px;
     width: 50px;
     background: none;
@@ -163,6 +166,9 @@ main > .friend_container > .result_container > .sent {
 main > .friend_container > .result_container > .sent > a:first-child {
     margin-left: 30px;
     margin-top: 6px;
+}
+main > .friend_container > .result_container > .sent > a:first-child > img{
+    border-radius: 100%;
 }
 main > .friend_container > .result_container > .sent > nav {
 margin-top: 6px;
@@ -205,6 +211,9 @@ main > .friend_container > .result_container > .friendship {
 main > .friend_container > .result_container > .friendship > a:first-child {
     margin-left: 30px;
     margin-top: 6px;
+}
+main > .friend_container > .result_container > .friendship > a:first-child > img {
+    border-radius: 100%;
 }
 main > .friend_container > .result_container > .friendship > nav {
 margin-top: 6px;
@@ -290,6 +299,9 @@ main > .friend_container > .result_container > .find > .find_friend {
 main > .friend_container > .result_container > .find > .find_friend > a:first-child {
     margin-left: 30px;
     margin-top: 6px;
+}
+main > .friend_container > .result_container > .find > .find_friend > a:first-child > img {
+    border-radius: 100%;
 }
 main > .friend_container > .result_container > .find > .find_friend > nav {
 margin-top: 6px;

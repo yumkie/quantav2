@@ -79,6 +79,14 @@
                         } else {
                             $friend = $invited;
                         }
+                        $select_avatar = "SELECT Avatar_photo FROM Users WHERE UserID='$friend'";
+                        $result_avatar = mysqli_query($link, $select_avatar);
+                        $user_avatar = mysqli_fetch_assoc($result_avatar);
+                        if($user_avatar['Avatar_photo'] === null) {
+                            $avatar = '../img/ava.svg';
+                        } else {
+                            $avatar = '../avatar_user/' . $user_avatar['Avatar_photo'];
+                        }
                         $select2 = "SELECT * FROM Users WHERE UserID = '$friend'";
                         $result2 = mysqli_query($link, $select2);
                         $user2 = mysqli_fetch_assoc($result2);
@@ -88,7 +96,7 @@
                         $invr = $_SESSION['invr'];
                         ?>
                         <nav class="friends">
-                            <a><img src="../img/ava.svg" width="146" height="141"></a>
+                            <a href='../html/profile_view.php'><img src="<?php echo $avatar; ?>" width="146" height="141"></a>
                             <nav>
                                 <p><?php echo $user2['Username'];?> <?php echo $user2['Lastname']; ?></p>
                                 <p>Online</p>
@@ -106,9 +114,17 @@
                         $select4 = "SELECT * FROM Users WHERE UserID = '$invited2'";
                         $result4 = mysqli_query($link, $select4);
                         $user4 = mysqli_fetch_assoc($result4);
+                        $select_avatar2 = "SELECT Avatar_photo FROM Users WHERE UserID='$invited2'";
+                        $result_avatar2 = mysqli_query($link, $select_avatar2);
+                        $user_avatar2 = mysqli_fetch_assoc($result_avatar2);
+                        if($user_avatar2['Avatar_photo'] === null) {
+                            $avatar2 = '../img/ava.svg';
+                        } else {
+                            $avatar2 = '../avatar_user/' . $user_avatar2['Avatar_photo'];
+                        }
                         ?>
                 <nav class="sent">
-                    <a><img src="../img/ava.svg" width="146" height="141"></a>
+                    <a><img src="<?php echo $avatar2; ?>" width="146" height="141"></a>
                     <nav>
                         <p><?php echo $user4['Username'];?> <?php echo $user4['Lastname']; ?></p>
                         <p>Online</p>
@@ -128,9 +144,17 @@
                         $select6 = "SELECT * FROM Users WHERE UserID = '$inviter2'";
                         $result6 = mysqli_query($link, $select6);
                         $user6 = mysqli_fetch_assoc($result6);
+                        $select_avatar3 = "SELECT Avatar_photo FROM Users WHERE UserID='$inviter2'";
+                        $result_avatar3 = mysqli_query($link, $select_avatar3);
+                        $user_avatar3 = mysqli_fetch_assoc($result_avatar3);
+                        if($user_avatar3['Avatar_photo'] === null) {
+                            $avatar3 = '../img/ava.svg';
+                        } else {
+                            $avatar3 = '../avatar_user/' . $user_avatar3['Avatar_photo'];
+                        }
                 ?>
                 <nav class="friendship">
-                    <a><img src="../img/ava.svg" width="146" height="141"></a>
+                    <a><img src="<?php echo $avatar3; ?>" width="146" height="141"></a>
                     <nav>
                         <p><?php echo $user6['Username'];?> <?php echo $user6['Lastname']; ?></p>
                         <p>Online</p>
@@ -154,9 +178,19 @@
                             if(isset($search[1])) {
                             $select7 = "SELECT * FROM Users WHERE Username='$search[0]' AND Lastname='$search[1]'";
                             $result7 = mysqli_query($link, $select7);
-                            while($user7 = mysqli_fetch_assoc($result7)) { ?>
+                            while($user7 = mysqli_fetch_assoc($result7)) { 
+                                $find_avatar = $user7['UserID'];
+                                $select_avatar4 = "SELECT Avatar_photo FROM Users WHERE UserID='$find_avatar'";
+                                $result_avatar4 = mysqli_query($link, $select_avatar4);
+                                $user_avatar4 = mysqli_fetch_assoc($result_avatar4);
+                                if($user_avatar4['Avatar_photo'] === null) {
+                                    $avatar4 = '../img/ava.svg';
+                                } else {
+                                    $avatar4 = '../avatar_user/' . $user_avatar4['Avatar_photo'];
+                                }                                
+                                ?>
                                 <nav class="find_friend">
-                                    <a><img src="../img/ava.svg" width="146" height="141"></a>
+                                    <a><img src="<?php echo $avatar4; ?>" width="146" height="141"></a>
                                     <nav>
                                         <p><?php echo $user7['Username'];?> <?php echo $user7['Lastname']; ?></p>
                                         <p>Online</p>
