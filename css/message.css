@@ -1,0 +1,228 @@
+*  {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+body {
+    overflow: hidden;
+    background-image: url(../img/image2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(../img/Purple\ Gradient\ Animated--cursor--SweezyCursors\ 1.png), auto;
+}
+a:hover, input[type=submit]:hover {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+}
+header {
+    display: flex;
+}
+header > img:first-child {
+    width: 36px;
+    height: 63px;
+    margin-left: 310px;
+    margin-top: 62px;
+}
+header > p {
+    font-family: 'Permanent Marker', serif;
+    font-size: 2.5rem;
+    margin-top: 72px;
+    margin-left: 27px;
+}
+header > a  {
+    margin-left: 1048px;
+    margin-top: 62px;
+}
+main > .message_container {
+    display: flex;
+    width: 1300px;
+    height: 800px;
+    margin-left: 310px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+main > .message_container > .left_chart_container {
+    width: 400px;
+    height: 800px;
+}
+main > .message_container > .left_chart_container > .menu_container {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+    border-bottom: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .message_container > .left_chart_container > .menu_container > a:first-child {
+    margin-left: 30px;
+}
+main > .message_container > .left_chart_container > .menu_container > a:last-child {
+    margin-left: 15px;
+}
+main > .message_container > .left_chart_container > .menu_container > a {
+    margin-top: 16px;
+    font-family: 'Poiret One', serif;
+    font-size: 1.2rem;
+}
+main > .message_container > .left_chart_container > .menu_container > a:last-child > img {
+    margin-left: 12px;
+}
+main > .message_container> .left_chart_container > .menu_container > a > p {
+    margin-top: -5px;
+}
+main > .message_container > .left_chart_container > .massage_list {
+    width: 400px;
+    height: 700px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+main > .message_container > .left_chart_container > .massage_list > .massage {
+    display: flex;
+    width: 400px;
+    height: 100px;
+}
+main > .message_container > .left_chart_container > .massage_list > .massage > img {
+    margin-top: 17px;
+    margin-left: 30px;
+    border-radius: 100%;
+}
+main > .message_container> .left_chart_container > .massage_list > .massage > .massage_content {
+    font-family: 'Poiret One', serif;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+main > .message_container > .left_chart_container > .massage_list > .massage > .massage_content > h1 {
+    font-size: 1.2rem;
+}
+main > .message_container> .left_chart_container > .massage_list > .massage > .massage_content > p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+main > .message_container > .left_chart_container > .massage_list > .massage:hover {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+    background: #00000067;
+    border-radius: 30px;
+}
+main > .message_container > .chat_container {
+    width: 900px;
+    height: 800px;
+}
+main > .message_container > .chat_container > img {
+    margin-left: 374px;
+    margin-top: 314px;
+}
+main > .message_container > .chat_container > p {
+    font-family: 'Poiret One', serif;
+    color: #D19049;
+    font-size: 1.75rem;
+    margin-top: 25px;
+    margin-left: 390px;
+}
+main > .message_container > .chat_container_view {
+    display: none;
+    width: 900px;
+    height: 800px;
+}
+main > .message_container > .chat_container_view > .massage_header {
+    display: flex;
+    width: 900px;
+    height: 100px;
+    border-bottom: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .message_container > .chat_container_view > .massage_header >  img  {
+    width: 68px;
+    height: 65px;
+    margin-left: 50px;
+    margin-top: 17px;
+    border-radius: 100%;
+}
+main > .message_container > .chat_container_view > .massage_header > .massage_text > h1, main > .message_container > .chat_container_view > .massage_header > .massage_text > p {
+    font-family: 'Poiret One', serif;
+    margin-left: 15px;
+    color:#fff;
+}
+main > .message_container > .chat_container_view > .massage_header > .massage_text > h1 {
+    font-size: 1.3rem;
+    margin-top: 17px;
+}
+main > .message_container > .chat_container_view > .massage_header > .massage_text > p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+main > .message_container > .chat_container_view > .massage_main {
+    width: 900px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+main > .message_container > .chat_container_view > .massage_main > .message_all {
+    min-height: 50px;
+    min-width: 800px;
+    display: flex;
+    margin-bottom: 30px;
+
+}
+main > .message_container > .chat_container_view > .massage_main > .message_all > img {
+    border-radius: 100%;
+    margin-left: 48px;
+}
+main > .message_container > .chat_container_view > .massage_main > .message_all > .message_title {
+    margin-left: 15px;
+}
+main > .message_container > .chat_container_view > .massage_main > .message_all > .message_title > p {
+    font-family: 'Poiret One', serif;
+}
+main > .message_container > .chat_container_view > .massage_main > .message_all > .message_title > p:first-child {
+    color:#D19049;
+    font-size: 1.2rem;
+    margin-top: -8px;
+}
+main > .message_container > .chat_container_view > .massage_main > .message_all > .message_title > p:last-child {
+    color:#fff;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+main > .message_container > form {
+    display: none;
+    position: relative;
+    top: 734px;
+    right: 883px;
+}
+main > .message_container >  form > input:first-child {
+    width: 831px;
+    height: 50px;
+    background: #D19049;
+    border-radius: 60px;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+}
+main > .message_container >  form > input::placeholder {
+    font-family: 'Poiret One', serif;
+    font-size: 1.3rem;
+    color:black;
+}
+main > .message_container > form > input[type=text] {
+padding-left: 30px;
+font-size: 1.3rem;
+font-family: 'Poiret One', serif;
+}
+main > .message_container > form > input[type=submit] {
+    position: relative;
+    right: 50px;
+    top: 15px;
+    background: none;
+    background-image: url(../img/submit.svg);
+    border:  none;
+    width: 28px;
+    height: 26px;
+}

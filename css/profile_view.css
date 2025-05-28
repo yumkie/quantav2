@@ -1,0 +1,160 @@
+*  {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+}
+body {
+    overflow: hidden;
+    background-image: url(../img/image2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(../img/Purple\ Gradient\ Animated--cursor--SweezyCursors\ 1.png), auto;
+}
+a:hover, main > .profile_container > .left_chart_container > .info > img:first-child:hover, .gallary > :is(img:first-child, img:last-child) {
+    cursor: url(../img/Purple\ Gradient\ Animated--pointer--SweezyCursors\ 1.png), auto;
+}
+header {
+    display: flex;
+}
+header > img:first-child {
+    width: 36px;
+    height: 63px;
+    margin-left: 310px;
+    margin-top: 62px;
+}
+header > p {
+    font-family: 'Permanent Marker', serif;
+    font-size: 2.5rem;
+    margin-top: 72px;
+    margin-left: 27px;
+}
+header > a  {
+    margin-left: 1048px;
+    margin-top: 62px;
+}
+header > img:first-child {
+    width: 36px;
+    height: 63px;
+    margin-left: 310px;
+    margin-top: 62px;
+}
+main > .profile_container {
+    display: flex;
+    width: 1300px;
+    height: 800px;
+    margin-left: 310px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+main > .profile_container > .left_chart_container {
+    width: 400px;
+    height: 800px;
+}
+main > .profile_container > .left_chart_container > .menu_container {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+    border-bottom: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .profile_container > .left_chart_container > .menu_container > a:first-child {
+    margin-left: 30px;
+}
+main > .profile_container > .left_chart_container > .menu_container > a:last-child {
+    margin-left: 15px;
+}
+main > .profile_container > .left_chart_container > .menu_container > a {
+    margin-top: 16px;
+    font-family: 'Poiret One', serif;
+    font-size: 1.2rem;
+}
+main > .profile_container > .left_chart_container > .menu_container > a:last-child > img {
+    margin-left: 12px;
+}
+main > .profile_container> .left_chart_container > .menu_container > a > p {
+    margin-top: -5px;
+}
+main > .profile_container > .left_chart_container > .info {
+    width: 400px;
+    height: 700px;
+    border-right: 1px solid rgba(209, 144, 73, 0.3);
+}
+main > .profile_container > .left_chart_container > .info > img:first-child {
+    margin-left: 342px;
+    margin-top: 10px;
+}
+main > .profile_container > .left_chart_container > .info > .more {
+    display: flex;
+    font-family: 'Poiret One', serif;
+    padding-top: 61px;
+    font-size: 1.8rem;
+    color: #D19049;
+    margin-left: 23px;
+}
+main > .profile_container > .left_chart_container > .info > .more > img {
+    margin-left: 10px;
+}
+main > .profile_container > .left_chart_container > .info > p {
+    font-family: 'Poiret One', serif;
+    font-size: 1.5rem;
+    margin-left: 23px;
+    color: #D19049;
+    margin-top: 20px;
+}
+main > .profile_container > .profile {
+    width: 900px;
+    height: 800px;
+
+}
+main > .profile_container > .profile > .profile_info_container {
+    display: flex;
+}
+main > .profile_container > .profile > .profile_info_container {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+main > .profile_container > .profile >  .profile_info_container > .profile_info > :is(h1, p) {
+    font-family: 'Poiret One', serif;
+    color: #D19049;
+    font-size: 4rem;
+    margin-left: 30px;
+}
+main > .profile_container > .profile >  .profile_info_container > .profile_info > p:nth-child(2) {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+main > .profile_container > .profile >  .profile_info_container > .profile_info > p:nth-child(3) {
+    width: 450px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+main > .profile_container > .profile > .profile_info_container > img {
+    border-radius: 100%;
+}
+main > .profile_container > .profile > .gallary {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+main > .profile_container > .profile > .gallary > img:last-child {
+    transform: rotate(180deg);
+}
+main > .profile_container > .profile > .gallary > .img {
+    overflow: hidden;
+    display: flex;
+    width: 690px;
+    height: 300px;
+    border-radius: 30px;
+}
+main > .profile_container > .profile > .gallary > .img > img {
+    min-width: 230px;
+    height: 300px;
+    margin-right: 2px;
+}

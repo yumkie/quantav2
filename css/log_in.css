@@ -25,9 +25,6 @@ header {
 header > img {
     margin-top: 100px;
     margin-right: 20px;
-    animation: logo 2s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
 }
 header > p {
     font-family: 'Permanent Marker', serif;
@@ -159,20 +156,5 @@ header > p:nth-child(7) {
     }
     100% {
         transform: scale(1);
-    }
-}
-@keyframes logo {
-    0% {
-        margin-top: -500px;
-        transform: rotate(-180deg);
-    }
-    50% {
-        margin-top: 100px;
-    }
-    70% {
-        transform: rotate(-180deg);
-    }
-    100% {
-        transform: rotate(0deg);
     }
 }
