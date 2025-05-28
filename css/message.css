@@ -79,17 +79,19 @@ main > .message_container > .left_chart_container > .massage_list {
     width: 400px;
     height: 700px;
     border-right: 1px solid rgba(209, 144, 73, 0.3);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 main > .message_container > .left_chart_container > .massage_list > .massage {
     display: flex;
     width: 400px;
     height: 100px;
 }
-main > .message_container > .left_chart_container > .massage_list > .massage > a {
-    margin-left: 30px;
-}
-main > .message_container > .left_chart_container > .massage_list > .massage > a > img {
+main > .message_container > .left_chart_container > .massage_list > .massage > img {
     margin-top: 17px;
+    margin-left: 30px;
+    border-radius: 100%;
 }
 main > .message_container> .left_chart_container > .massage_list > .massage > .massage_content {
     font-family: 'Poiret One', serif;

@@ -77,10 +77,10 @@
                 </nav>
                 <nav class="gallary">
                 <?php
-                        $select_count = "SELECT COUNT(*) FROM User_Photos WHERE User_id='$id'";
+                        $select_count = "SELECT COUNT(*) FROM User_Photos WHERE User_id='$key'";
                         $result_count = mysqli_query($link, $select_count);
                         $user_count = mysqli_fetch_assoc($result_count);
-                        foreach ($user_count as $key => $count) {
+                        foreach ($user_count as $keys => $count) {
    
                         }
                         if($count > 3) {?>
@@ -88,6 +88,7 @@
                     <?php } ?>
                     <nav class="img">
                         <?php
+                            echo $key;
                             $select_photo = "SELECT * FROM User_Photos WHERE User_id='$key'";
                             $result_photo = mysqli_query($link, $select_photo);
                             while($user_photo = mysqli_fetch_assoc($result_photo)) { 
@@ -105,6 +106,5 @@
         </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/profile.js"></script>
 </body>
 </html>

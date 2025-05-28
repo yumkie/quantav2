@@ -32,28 +32,33 @@
                 session_start();
                 require("../php/connect.php");
                 $id = $_SESSION['id'];
-                $select = "SELECT * FROM Chats WHERE UserID='$id' OR UserID2='$id'";
-                $result = mysqli_query($link, $select);
-                $user = mysqli_fetch_assoc($result);
-                if($user['UserID'] == $id) {
-                    $id2 = $user['UserID2'];
-                }else {
-                    $id2 = $user['UserID'];
-                }
                 ?>
                 <nav class="massage_list">
                 <?php
-                $select_chat = "SELECT * FROM Users WHERE UserID='$id2'";
-                $result_chat = mysqli_query($link, $select_chat);
-                while($user_chat = mysqli_fetch_assoc($result_chat)) { ?>
-                    <nav class="massage" onclick="ds()">
-                        <a href="#"><img src="../img/ava.svg"></a>
-                        <nav class="massage_content">
-                            <h1><?php echo $user_chat['Username'];?> <?php echo $user_chat['Lastname'];?></h1>
-                            <p>You: Hello! Where are you?</p>
+                $select = "SELECT * FROM Chats WHERE UserID='$id' OR UserID2='$id'";
+                $result = mysqli_query($link, $select);
+                while($user = mysqli_fetch_assoc($result)) { 
+                    if($user['UserID'] == $id) {
+                        $id2 = $user['UserID2'];
+                    }else {
+                        $id2 = $user['UserID'];
+                    }
+                    $select_chat = "SELECT * FROM Users WHERE UserID='$id2'";
+                    $result_chat = mysqli_query($link, $select_chat);
+                    $user_chat = mysqli_fetch_assoc($result_chat); 
+                    if($user_chat['Avatar_photo'] === null) {
+                        $avatar = '../img/ava.svg';
+                    } else {
+                        $avatar = '../avatar_user/' . $user_chat['Avatar_photo'];
+                    } ?>
+                        <nav class="massage" onclick="ds()">
+                            <img src="<?php echo $avatar; ?>" width='60' height='60'>
+                            <nav class="massage_content">
+                                <h1><?php echo $user_chat['Username'];?> <?php echo $user_chat['Lastname'];?></h1>
+                                <p>You: Hello! Where are you?</p>
+                            </nav>
                         </nav>
-                    </nav>
-                <?php } ?>
+            <?php } ?>
                 </nav>
             </div>
             <nav class="chat_container">

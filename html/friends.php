@@ -42,7 +42,6 @@
                         <p>Friends <?php echo implode('', $user_friend); ?></p>
                     </nav>
                     <?php
-                        $id = $_SESSION['id'];
                         $count_sent = "SELECT COUNT(*) FROM Friend_requests WHERE user_inviter='$id'";
                         $result_sent = mysqli_query($link, $count_sent);
                         $user_sent = mysqli_fetch_assoc($result_sent);
@@ -230,8 +229,7 @@
                                                 <input type='submit' name='<?php echo $id2;?>' value='' style="background-image: url('../img/delete.svg')">
                                             </form>
                                     <?php }
-                                        if(empty($user10) && empty($user9) && empty($user8)) { 
-                                            $_SESSION['id2'] = $id2?>
+                                        if(empty($user10) && empty($user9) && empty($user8)) { ?>
                                             <form action='../php/add_find.php' method='POST'>
                                                 <input type='submit' name='<?php echo $id2;?>' value='' style="background-image: url('../img/add.svg')">
                                             </form>

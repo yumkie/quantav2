@@ -6,11 +6,22 @@
         $invr = $_SESSION['invr'];
         foreach ($_POST as $key => $value) {
             if(isset($_POST[$key])) {
+                $insert = "INSERT INTO `Friend_requests` (`Friend_id`, `user_inviter`, `user_invited`)
+SELECT `Friend_id`,
+       CASE 
+           WHEN User_id = '$id' THEN User_id2 
+           ELSE User_id
+       END,
+       CASE 
+           WHEN User_id2 = '$id' THEN User_id2
+           ELSE User_id
+       END
+FROM `Friends` 
+WHERE Friend_id = '$key'"; 
+                mysqli_query($link, $insert);
+                echo $insert;
                 $delete = "DELETE FROM Friends WHERE Friend_id='$key'";
-                $result = mysqli_query($link, $delete);
-                $insert = "INSERT INTO `Friend_requests`(`user_inviter`, `user_invited`) VALUES ('$invr','$invd')";
-                echo $insert; 
-                $result = mysqli_query($link, $insert);
+                mysqli_query($link, $delete);
                 echo "
                 <script>
                     setTimeout(function() {
